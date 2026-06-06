@@ -45,11 +45,5 @@ Dominio de la repetición controlada de procesos y el almacenamiento permanente 
 * **Bucles Anidados:** Construcción de bucles dentro de otros bucles para modelar estructuras complejas bidimensionales, tales como matrices de coordenadas personalizadas o tablas de multiplicar completas.
 * **Manejo de Ficheros (I/O):** Uso de gestores de contexto automáticos (`with open()`) para interactuar con archivos de texto plano. Implementación de escrituras en modo destructivo/sobrescritura (`"w"`) y escrituras en modo adición al final del archivo (`"a"`) sin comprometer los datos existentes.
 
-##  Proyecto Destacado: Calculadora Interactiva de Consola (`calculadora.py`)
-Como culminación de estas prácticas, desarrollé un entorno interactivo completo que consolida todo lo aprendido. Se trata de una calculadora de consola que incluye:
-1. **Realimentación Continua:** El resultado de una operación se convierte automáticamente en el operando inicial para la siguiente instrucción.
-2. **Control Robusto de Excepciones:** Uso de bloques de seguridad `try-except ValueError` para capturar e interceptar entradas alfanuméricas inválidas sin que el programa aborte o colapse.
-3. **Validación de Errores Matemáticos:** Control explícito para evitar fallos de división por cero (`ZeroDivisionError`).
-4. **Salida Universal:** Flexibilidad total del flujo que permite al programa interpretar el comando `"FIN"` de forma unificada (independientemente de mayúsculas o minúsculas) en cualquier fase de la ejecución (pidiendo el primer operando, el segundo operando o el operador lógico) mediante banderas de control y la interrupción `exit()`.
 
 
