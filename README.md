@@ -1,6 +1,5 @@
 # Portfolio Técnico - 1º de ASIR 
-
-¡Hola! Soy Andrés V, estudiante de Administración de Sistemas Informáticos en Red. En este repositorio recopilo los laboratorios, scripts y proyectos más destacados que he desarrollado durante mi primer año en el ciclo.
+Soy Andrés Vizcaíno Bazaga, estudiante de Administración de Sistemas Informáticos en Red. En este repositorio recopilo los laboratorios, scripts y proyectos más destacados que he desarrollado durante mi primer año en el ciclo.
 
 ## 📂 Índice de Módulos y Prácticas
 
