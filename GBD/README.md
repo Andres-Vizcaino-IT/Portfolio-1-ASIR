@@ -1,41 +1,46 @@
-# 🗄️ Portfolio de Gestión de Bases de Datos - 1º ASIR
+# 🗄️ Gestión de Bases de Datos (GBD) - ASIR 1
 
-¡Bienvenido al repositorio del módulo de **Gestión de Bases de Datos (GBD)**!
-
-Este espacio recopila toda la evolución de mi aprendizaje en el diseño, despliegue, consulta y programación de bases de datos relacionales. El objetivo de este módulo es dominar el ciclo de vida completo de la información: desde la toma de requisitos y el diseño en papel, hasta la implementación de consultas complejas y la automatización mediante programación directa en el motor de base de datos.
-
-A continuación, se detalla el contenido técnico del repositorio, estructurado según el temario oficial:
+Repositorio con los materiales, apuntes, prácticas y diseños correspondientes al módulo de **Gestión de Bases de Datos (GBD)** del primer curso del Ciclo Formativo de Grado Superior en **Administración de Sistemas Informáticos en Red (ASIR)**.
 
 ---
 
-## 📚 1. Fundamentos y Diseño de Bases de Datos
-En esta fase inicial, el enfoque se centra en la arquitectura de la información y el modelado de datos antes de tocar código.
-
-* **Introducción a los Sistemas de Almacenamiento (GBD1):** Conceptos clave de los Sistemas Gestores de Bases de Datos (SGBD), niveles de abstracción y arquitectura.
-* **Diseño Conceptual (GBD2):** Creación del **Modelo Entidad-Relación (MER)**. Identificación de entidades, atributos, claves principales/foráneas y cardinalidades (1:1, 1:N, N:M).
-* **Modelo Relacional y Normalización (GBD3):** Paso del diseño conceptual a tablas reales. Aplicación de las Formas Normales (1FN, 2FN, 3FN) para evitar la redundancia de datos y garantizar la integridad referencial.
-
-## 💻 2. Implementación y Consultas (SQL)
-Traducción de los modelos teóricos a bases de datos funcionales mediante el estándar SQL.
-
-* **Lenguaje de Definición de Datos - DDL (GBD4):** Creación y modificación de la estructura de la base de datos usando comandos como `CREATE`, `ALTER` y `DROP` (Tablas, Vistas, Índices).
-* **Lenguaje de Manipulación de Datos - DML (GBD5):** Inserción, actualización y borrado de registros (`INSERT`, `UPDATE`, `DELETE`). Dominio de las consultas de extracción (`SELECT`), filtrado (`WHERE`), agrupaciones (`GROUP BY`, `HAVING`) y cruce de tablas mediante `JOIN` (Inner, Left, Right).
-
-## ⚙️ 3. Programación Avanzada en Bases de Datos
-Automatización de tareas y reglas de negocio directamente en el servidor.
-
-* **Programación (GBD6):** Uso de variables, estructuras de control de flujo (IF, WHILE) y cursores.
-* **Rutinas Almacenadas:** Creación de **Procedimientos Almacenados (Stored Procedures)** y **Funciones** para encapsular lógica compleja.
-* **Disparadores (Triggers):** Implementación de código que se ejecuta automáticamente ante eventos de DML para auditorías o validación de reglas de negocio complejas.
+## 📋 Índice
+- [Descripción General](#-descripción-general)
+- [Estructura del Temario](#-estructura-del-temario)
+- [Herramientas y Lenguajes](#-herramientas-y-lenguajes)
+- [Cómo utilizar este repositorio](#-cómo-utilizar-este-repositorio)
 
 ---
 
-## 🛠️ 4. Laboratorios Prácticos y Proyectos
-*(Aquí se irán enlazando los archivos a medida que se suban al repositorio)*
-
-* 📁 **Diseño Conceptual y Relacional:** (Próximamente...)
-* 📁 **Ejercicios SQL - DDL y DML:** (Próximamente...)
-* 📁 **Scripts de Programación y Triggers:** (Próximamente...)
+## 📌 Descripción General
+El objetivo de este módulo es asentar las bases sobre el almacenamiento de la información, el modelado estructurado de datos, el diseño conceptual/lógico y la gestión eficiente de los datos utilizando diferentes Sistemas Gestores de Bases de Datos (SGBD).
 
 ---
-*Este repositorio demuestra mi capacidad para diseñar arquitecturas de datos sólidas, extraer información mediante consultas eficientes y programar rutinas directamente en el núcleo del SGBD.*
+
+## 🗂️ Estructura del Temario
+
+### 📑 Unidad de Trabajo 1: La Gestión de los Datos
+Introducción teórica sobre el valor de los datos en la sociedad y en los entornos organizativos.
+* **Concepto de Información:** El ciclo de vida de los datos y su importancia como recurso organizacional clave.
+* **Cualidades de la Información:** Requisitos fundamentales para evitar la "polución informativa" (precisión, oportunidad, coherencia, integridad y seguridad).
+* **Sistemas de Información (SI):** Análisis de la arquitectura básica basada en entradas, procesos de transformación, salidas y mecanismos de retroalimentación.
+
+### 💾 Bloque 1: Sistemas de Almacenamiento de la Información
+Estudio de la evolución técnica de los métodos de almacenamiento y la arquitectura de los gestores.
+* **Evolución Tecnológica:** Transición histórica y técnica desde los Sistemas de Gestión de Ficheros (SGF) hacia los modernos SGBD.
+* **Arquitectura de Sistemas:** Análisis de la arquitectura ANSI/SPARC de tres niveles y diferencias entre entornos centralizados y distribuidos (replicación y fragmentación).
+* **Modelos de Datos:** Repaso de los paradigmas relacional, jerárquico, en red, orientado a objetos y las distintas familias de bases de datos NoSQL.
+* **Propiedades del SGBD:** Garantía de transacciones mediante propiedades ACID, control de concurrencia y mecanismos de seguridad.
+* **Lenguajes Estándar:** Introducción teórica a los sublenguajes de SQL (DDL para definición, DML para manipulación, DCL para control y TCL para transacciones).
+
+### 📐 Bloque 2: Diseño Conceptual y Lógico
+Metodología de ingeniería de datos para estructurar la información antes de su implementación física.
+* **Modelo Entidad/Relación (E/R):** Diseño de esquemas conceptuales definiendo entidades (fuertes y débiles), tipos de atributos y el grado o cardinalidad de las relaciones.
+* **Modelo E/R Ampliado:** Aplicación de conceptos avanzados de diseño, incluyendo jerarquías de generalización y especialización.
+* **Modelo Relacional (MR):** Traducción de los diagramas E/R a estructuras tabulares (tuplas, dominios y claves) siguiendo las reglas de Codd.
+* **Proceso de Normalización:** Aplicación de reglas matemáticas (desde la 1FN hasta la 5FN, incluyendo la FNBC) para eliminar dependencias anómalas, optimizar el esquema y reducir la redundancia de datos.
+
+
+
+
+
