@@ -3,7 +3,7 @@ Soy Andrés Vizcaíno Bazaga, estudiante de Administración de Sistemas Informá
 
 ## 📂 Índice de Módulos y Prácticas
 
-A continuación se muestran los bloques de prácticas organizados por módulos:
+
 
 * [💻 ISO - Implantación de Sistemas Operativos](./ISO/)
 * [🌐 PAR - Planificación y Administración de Redes](./PAR/)
