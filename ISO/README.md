@@ -3,7 +3,6 @@ Este directorio contiene los laboratorios prácticos y proyectos desarrollados d
 
 ## 🗂️ Índice de Prácticas y Proyectos
 
-* [📄 Práctica ISO-P102: Gestión de Licencias y Derechos de Autor](./ISO_P102_Gestion_Licencias_y_Derechos_Autor.pdf)
 * [📄 Práctica ISO-P203: Despliegue de Entornos Java y Archivos JAR](./ISO_P203Despliegue_Entornos_Java_y_Archivos_JAR.pdf.pdf)
 * [📄 Práctica ISO-P221: Esteganografía en Sistemas Windows y Linux](./ISO_P221_Esteganografia_en_Sistemas_Windows_y_Linux.pdf.pdf)
 * [📄 Práctica ISO-P303: Particionado con Fdisk y GParted desde LiveCD](./ISO_P303_Particionado_con_Fdisk_y_GParted_LiveCD.pdf)
