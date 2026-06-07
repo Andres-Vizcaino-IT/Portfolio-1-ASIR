@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Master Page LMSGI - Andrés Vizcaíno Bazaga</title>
+
+    <style type="text/css" media="all">
+        /* 1. MODELO DE CAJA Y UNIDADES RELATIVAS (vw, vh, %) */
+        body {
+            font-family: 'Trebuchet MS', Arial, sans-serif; /* Fuentes de respaldo */
+            background-color: hsl(220, 20%, 95%); /* Color HSL */
+            margin: 0;
+            padding: 2vw;
+        }
+
+        #contenedor_principal {
+            width: 80vw;
+            margin: auto; /* Centrar con margin */
+            background-color: white;
+            padding: 20px;
+            border: 3px dashed #333;
+        }
+
+        /* 2. ESPECIFICIDAD Y HERENCIA */
+        h1 {
+            color: rgb(50, 100, 200); /* Color RGB */
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            text-decoration: underline overline; /* Decoración doble */
+        }
+
+        h2, h3 { /* Agrupación de selectores */
+            color: #E83B59; /* Color Hexadecimal */
+            border-bottom: 2px solid gray;
+        }
+
+        p.destacado {
+            font-size: 1.5em !important; /* Unidades em y !important para forzar */
+            line-height: 1.8;
+            background-color: rgba(255, 255, 0, 0.3); /* Transparencia RGBA */
+            text-indent: 40px; /* Indentación */
+        }
+
+        /* 3. ESTILOS PARA TABLAS */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+        
+        th, td {
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        thead {
+            background-color: hsla(120, 60%, 40%, 0.8); /* Color HSLA */
+            color: white;
+        }
+
+        /* 4. MEDIA QUERIES (Responsividad y Medios) */
+        /* Para pantallas pequeñas (móviles) */
+        @media screen and (max-width: 600px) {
+            #contenedor_principal {
+                width: 95vw;
+            }
+            h1 { font-size: 1.5em; }
+        }
+
+        /* Para impresión */
+        @media print {
+            body {
+                background-color: white;
+                color: black;
+            }
+            .no-imprimir {
+                display: none; /* Ocultar elementos al imprimir */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="contenedor_principal">
+
+        <h1>  Master Class LMSGI</h1>
+        <h2>1. Formato de Texto y Enlaces</h2>
+        <p class="destacado">
+            Bienvenidos a la página definitiva. Aquí repasamos el uso de <strong>negritas</strong>, <em>cursivas</em>, <br>
+            saltos de línea y símbolos matemáticos como H<sub>2</sub>O o E=mc<sup>2</sup>.
+        </p>
+
+        <p>
+            Visita <a href="https://github.com" target="_blank">GitHub</a> o envíame un correo usando <a href="mailto:admin@ejemplo.com">mailto</a>. 
+            También puedes <a href="#formulario_contacto">saltar al formulario abajo</a>.
+        </p>
+
+        <h2 class="no-imprimir">2. Multimedia e Iframes</h2>
+        <div class="no-imprimir">
+            <audio controls loop>
+                <source src="musica_fondo.mp3" type="audio/mpeg">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+            <br><br>
+            <video width="400" controls muted>
+                <source src="trailer_juego.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+            <br><br>
+            <iframe src="https://es.wikipedia.org/wiki/Videojuego" width="100%" height="200px"></iframe>
+        </div>
+
+        <h2>3. Listas Anidadas</h2>
+        <ul>
+            <li>Periféricos
+                <ol type="I">
+                    <li>Ratón Mecánico</li>
+                    <li>Teclado RGB</li>
+                </ol>
+            </li>
+            <li>Consolas</li>
+        </ul>
+
+        <h2>4. Mapas de Imágenes (Zonas Interactivas)</h2>
+        <img src="https://via.placeholder.com/400x200" alt="Mapa del Tesoro" usemap="#mapa_juego" style="width: 400px;">
+        <map name="mapa_juego">
+            <area shape="rect" coords="0,0,200,200" href="#izquierda" alt="Zona Izquierda">
+            <area shape="circle" coords="300,100,50" href="#derecha" alt="Zona Derecha">
+        </map>
+
+        <h2>5. Estructura de Tablas Bidimensionales</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Horario</th>
+                    <th>Lunes</th>
+                    <th>Martes</th>
+                    <th>Miércoles</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>08:00 - 09:00</td>
+                    <td>Sistemas</td>
+                    <td colspan="2">Redes Locales</td> 
+                </tr>
+                <tr>
+                    <td>09:00 - 10:00</td>
+                    <td rowspan="2">Hardware</td>
+                    <td>Bases de Datos</td>
+                    <td>LMSGI</td>
+                </tr>
+                <tr>
+                    <td>10:00 - 11:00</td>
+                    <td>Inglés</td>
+                    <td>LMSGI</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4"><i>Recreo a las 11:00</i></td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <h2 id="formulario_contacto">6. Formularios Avanzados HTML5</h2>
+        <form action="#" method="POST" enctype="multipart/form-data" oninput="resultado.value=rango_nivel.value">
+            <fieldset>
+                <legend>Registro de Usuario (Formulario)</legend>
+
+                <label for="nombre">Nickname:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej: Player1" required autofocus><br><br>
+
+                <label for="pass">Contraseña:</label>
+                <input type="password" id="pass" name="pass" pattern="[A-Za-z0-9]{8,}" title="Mínimo 8 caracteres" required><br><br>
+
+                <label for="clase">Clase del Personaje:</label>
+                <select id="clase" name="clase">
+                    <optgroup label="Cuerpo a cuerpo">
+                        <option value="guerrero">Guerrero</option>
+                        <option value="paladin">Paladín</option>
+                    </optgroup>
+                    <optgroup label="A distancia">
+                        <option value="arquero" selected>Arquero</option>
+                        <option value="mago">Mago</option>
+                    </optgroup>
+                </select><br><br>
+
+                <label>Dificultad:</label>
+                <input type="radio" name="dif" value="facil" id="f"><label for="f">Fácil</label>
+                <input type="radio" name="dif" value="dificil" id="d"><label for="d">Difícil</label><br><br>
+
+                <input type="checkbox" name="terminos" id="terminos" required>
+                <label for="terminos">Acepto los términos y condiciones</label><br><br>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="fecha">Fecha de Nacimiento:</label>
+                <input type="date" id="fecha" name="fecha"><br><br>
+
+                <label for="color_interfaz">Color de Interfaz:</label>
+                <input type="color" id="color_interfaz" name="color_interfaz" value="#ff0000"><br><br>
+
+                <label for="juego">Juego Favorito (Datalist):</label>
+                <input list="juegos" id="juego" name="juego">
+                <datalist id="juegos">
+                    <option value="Zelda">
+                    <option value="Elden Ring">
+                    <option value="Minecraft">
+                </datalist><br><br>
+
+                <label for="rango_nivel">Nivel de experiencia (0-100):</label>
+                <input type="range" id="rango_nivel" name="rango_nivel" min="0" max="100" value="50">
+                <output name="resultado" for="rango_nivel">50</output><br><br>
+
+                <label for="archivo">Sube tu avatar:</label>
+                <input type="file" id="archivo" name="archivo" multiple><br><br>
+
+                <label for="comentarios">Comentarios:</label><br>
+                <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br><br>
+
+                <input type="submit" value="Enviar Registro">
+                <input type="reset" value="Limpiar Formulario">
+            </fieldset>
+        </form>
+
+    </div>
+</body>
+</html>
