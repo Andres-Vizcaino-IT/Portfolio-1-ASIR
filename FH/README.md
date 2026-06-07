@@ -34,3 +34,22 @@ Aplicación práctica del taller y configuración inicial de los equipos.
 * **Prevención de Riesgos (EPIs):** Manejo de la electricidad estática (pulseras antiestáticas), herramientas adecuadas y protocolos de seguridad en el taller de hardware.
 * **BIOS y UEFI:** Acceso al firmware de la placa base, configuración de la secuencia de arranque (*boot priority*), perfiles XMP/EXPO para la memoria y monitorización de hardware (temperaturas y voltajes).
 * **Resolución de Problemas (Troubleshooting):** Diagnóstico de fallos a través de pitidos de la BIOS (códigos POST), leds de depuración en la placa base y tests de estrés de componentes.
+
+  ## ☁️  Laboratorios Prácticos y Documentación 
+En esta sección se encuentran las memorias detalladas de los despliegues de sistemas, virtualización y seguridad realizados durante el curso:
+
+### 📄 [Práctica 1: Instalación y Administración de un Hipervisor de Tipo 1](./01_instalacion_hipervisor_tipo1.pdf)
+* **Tecnología:** VMware ESXi (Bare-Metal).
+* **Descripción:** Despliegue de un hipervisor directamente sobre el hardware físico. Incluye la configuración de la secuencia de arranque, asignación de recursos y la creación y estructuración de los almacenes de datos (Datastores / VMFS) para alojar futuras máquinas virtuales.
+
+### 📄 [Práctica 2: Gestión de Copias de Seguridad y Restauración](./02_copias_de_seguridad.pdf)
+* **Tecnología:** Uranion Backup / Administración de Discos de Windows.
+* **Descripción:** Aprovisionamiento de nuevas unidades de almacenamiento en el sistema y diseño de políticas de respaldo. Documentación paso a paso de la ejecución de copias de seguridad **Completas, Incrementales y Diferenciales**, culminando con la validación de la integridad mediante una restauración exitosa.
+
+### 📄 [Práctica 3: Almacenamiento en la Nube con Microsoft Azure](./03_almacenamiento_nube_azure.pdf)
+* **Tecnología:** Microsoft Azure Storage / PowerShell.
+* **Descripción:** Creación y securización de una cuenta de almacenamiento en la nube pública. La práctica destaca por la integración del servicio cloud con un entorno local Windows, mapeando el almacenamiento virtual como una unidad de red física mediante scripts de PowerShell, y configurando políticas de retención y eliminación temporal.
+
+### 📄 [Práctica 4: Despliegue de Máquinas Virtuales en la Nube](./04_creacion_maquinas_virtuales.pdf)
+* **Tecnología:** Microsoft Azure VMs / Ubuntu Linux / PuTTY (SSH).
+* **Descripción:** Diseño y aprovisionamiento de una infraestructura computacional (IaaS). Incluye el dimensionamiento de la instancia, la configuración de resiliencia geográfica (Regiones y Zonas) y la securización perimetral mediante Grupos de Seguridad de Red (NSG). Finaliza con la conexión remota y segura a la máquina Ubuntu utilizando pares de claves criptográficas (.pem/.ppk) mediante el cliente SSH PuTTY.
