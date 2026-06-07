@@ -9,7 +9,7 @@ El objetivo de este módulo es asentar las bases sobre el almacenamiento de la i
 
 ## 🗂️ Estructura del Temario
 
-### 📑 Unidad de Trabajo 1: La Gestión de los Datos
+### 📑 Unidad de Trabajo : La Gestión de los Datos
 Introducción teórica sobre el valor de los datos en la sociedad y en los entornos organizativos.
 * **Concepto de Información:** El ciclo de vida de los datos y su importancia como recurso organizacional clave.
 * **Cualidades de la Información:** Requisitos fundamentales para evitar la "polución informativa" (precisión, oportunidad, coherencia, integridad y seguridad).
