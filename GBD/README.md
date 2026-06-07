@@ -2,20 +2,10 @@
 
 Repositorio con los materiales, apuntes, prácticas y diseños correspondientes al módulo de **Gestión de Bases de Datos (GBD)** del primer curso del Ciclo Formativo de Grado Superior en **Administración de Sistemas Informáticos en Red (ASIR)**.
 
----
-
-## 📋 Índice
-- [Descripción General](#-descripción-general)
-- [Estructura del Temario](#-estructura-del-temario)
-- [Herramientas y Lenguajes](#-herramientas-y-lenguajes)
-- [Cómo utilizar este repositorio](#-cómo-utilizar-este-repositorio)
-
----
-
 ## 📌 Descripción General
 El objetivo de este módulo es asentar las bases sobre el almacenamiento de la información, el modelado estructurado de datos, el diseño conceptual/lógico y la gestión eficiente de los datos utilizando diferentes Sistemas Gestores de Bases de Datos (SGBD).
 
----
+
 
 ## 🗂️ Estructura del Temario
 
